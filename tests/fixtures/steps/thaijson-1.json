@@ -1,0 +1,52 @@
+{
+ "thai": true,
+ "model": "thai-model-x",
+ "turns_from": "nemotron",
+ "windows": 3,
+ "thai_windows": 2,
+ "turns": [
+  {
+   "start": 3.249,
+   "end": 4.805,
+   "spk": "speaker_1",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "crondi helvix vandrel hastrel ulmox frimble"
+  },
+  {
+   "start": 7.622,
+   "end": 10.663,
+   "spk": "speaker_2",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "quorm kelvo"
+  },
+  {
+   "start": 12.454,
+   "end": 15.824,
+   "spk": "speaker_2",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "ulmox zorvel"
+  },
+  {
+   "start": 19.239,
+   "end": 23.051,
+   "spk": "speaker_0",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "crondi glimor gostra yarsk abrel sablo"
+  },
+  {
+   "start": 23.551,
+   "end": 25.051,
+   "spk": "speaker_0",
+   "p_thai": 0.8,
+   "p_en": 0.05,
+   "text": "zintar abrel"
+  }
+ ],
+ "stats": {
+  "turns": 5
+ }
+}

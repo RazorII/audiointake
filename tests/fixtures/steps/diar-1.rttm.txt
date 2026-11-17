@@ -1,0 +1,10 @@
+SPEAKER clip 1.16k 1 0.000 2.055 <NA> <NA> speaker_2 <NA> <NA>
+SPEAKER clip 1.16k 1 2.409 2.350 <NA> <NA> speaker_1 <NA> <NA>
+SPEAKER clip 1.16k 1 5.478 3.026 <NA> <NA> speaker_2 <NA> <NA>
+SPEAKER clip 1.16k 1 8.523 1.675 <NA> <NA> speaker_1 <NA> <NA>
+SPEAKER clip 1.16k 1 10.874 5.734 <NA> <NA> speaker_0 <NA> <NA>
+SPEAKER clip 1.16k 1 16.967 1.150 <NA> <NA> speaker_2 <NA> <NA>
+SPEAKER clip 1.16k 1 18.233 2.031 <NA> <NA> speaker_1 <NA> <NA>
+SPEAKER clip 1.16k 1 21.007 4.768 <NA> <NA> speaker_0 <NA> <NA>
+SPEAKER clip 1.16k 1 26.722 5.727 <NA> <NA> speaker_1 <NA> <NA>
+SPEAKER clip 1.16k 1 32.429 1.414 <NA> <NA> speaker_2 <NA> <NA>

@@ -1,0 +1,44 @@
+{
+ "thai": true,
+ "model": "thai-model-x",
+ "turns_from": "nemotron",
+ "windows": 3,
+ "thai_windows": 2,
+ "turns": [
+  {
+   "start": 3.651,
+   "end": 5.228,
+   "spk": "speaker_2",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "crondi ulmox nirvo gostra dulvo"
+  },
+  {
+   "start": 14.275,
+   "end": 16.835,
+   "spk": "speaker_2",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "zorvel helvix rostav"
+  },
+  {
+   "start": 22.204,
+   "end": 23.459,
+   "spk": "speaker_2",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "ixtel kelvo fennow quibbet"
+  },
+  {
+   "start": 23.959,
+   "end": 25.459,
+   "spk": "speaker_2",
+   "p_thai": 0.8,
+   "p_en": 0.05,
+   "text": "zintar abrel"
+  }
+ ],
+ "stats": {
+  "turns": 4
+ }
+}

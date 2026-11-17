@@ -1,0 +1,16 @@
+SPEAKER vote one.16k 1 0.000 2.292 <NA> <NA> speaker_1 <NA> <NA>
+SPEAKER vote one.16k 1 2.533 2.108 <NA> <NA> speaker_0 <NA> <NA>
+SPEAKER vote one.16k 1 5.640 0.656 <NA> <NA> speaker_1 <NA> <NA>
+SPEAKER vote one.16k 1 6.469 3.290 <NA> <NA> speaker_0 <NA> <NA>
+SPEAKER vote one.16k 1 9.942 1.145 <NA> <NA> speaker_1 <NA> <NA>
+SPEAKER vote one.16k 1 11.348 1.741 <NA> <NA> speaker_0 <NA> <NA>
+SPEAKER vote one.16k 1 13.934 3.774 <NA> <NA> speaker_1 <NA> <NA>
+SPEAKER vote one.16k 1 17.808 4.587 <NA> <NA> speaker_0 <NA> <NA>
+SPEAKER vote one.16k 1 22.490 5.050 <NA> <NA> speaker_1 <NA> <NA>
+SPEAKER vote one.16k 1 28.325 1.996 <NA> <NA> speaker_0 <NA> <NA>
+SPEAKER vote one.16k 1 31.240 5.653 <NA> <NA> speaker_1 <NA> <NA>
+SPEAKER vote one.16k 1 37.736 1.705 <NA> <NA> speaker_0 <NA> <NA>
+SPEAKER vote one.16k 1 40.179 0.570 <NA> <NA> speaker_1 <NA> <NA>
+SPEAKER vote one.16k 1 40.802 4.602 <NA> <NA> speaker_0 <NA> <NA>
+SPEAKER vote one.16k 1 45.837 5.921 <NA> <NA> speaker_1 <NA> <NA>
+SPEAKER vote one.16k 1 52.446 2.194 <NA> <NA> speaker_0 <NA> <NA>

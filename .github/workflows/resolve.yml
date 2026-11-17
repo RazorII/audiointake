@@ -1,0 +1,57 @@
+name: resolve
+
+# Weekly: do audiointake's runtime dependencies resolve on macOS with Apple silicon for Python 3.12
+# to 3.15? pyproject caps Python below 3.15 because mlx and torch had no cp315 wheel when it was
+# set. This resolves the dependencies with that cap lifted, so a green 3.15 row says the cap can go.
+# Wheels only (--only-binary :all:): a dependency that resolves only to a source distribution would
+# need a native build that `uv tool install` on a user's Mac shouldn't do, so it counts as not
+# resolving. A red row is information, not a failure of the code; the summary shows which
+# dependency stops it. Action versions are pinned to commit SHAs (tests/test_workflows.py).
+
+on:
+  schedule:
+    - cron: "41 4 * * 2"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile:
+    name: macos-arm64-py${{ matrix.python }}
+    runs-on: ubuntu-24.04
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.12", "3.13", "3.14", "3.15"]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6.8.0
+        with:
+          version: "0.13.5"   # the uv the plugin's skill installs
+      - name: The runtime dependencies, without the Python cap
+        run: |
+          python3 - <<'PY'
+          import tomllib
+          from pathlib import Path
+          deps = tomllib.loads(Path("pyproject.toml").read_text(encoding="utf-8"))["project"]["dependencies"]
+          Path("requirements.in").write_text("\n".join(deps) + "\n", encoding="utf-8")
+          PY
+      - name: Resolve
+        env:
+          PY: ${{ matrix.python }}
+          # mlx's oldest macOS wheels are for macOS 14, audiointake's floor.
+          MACOSX_DEPLOYMENT_TARGET: "14.0"
+        run: |
+          rc=0
+          uv pip compile requirements.in --python-version "$PY" --python-platform aarch64-apple-darwin \
+            --only-binary :all: --no-header -o resolved.txt 2> resolve.err || rc=$?
+          {
+            echo "## macOS arm64, Python $PY"
+            if [ "$rc" = 0 ]; then echo "resolves"; echo '```'; cat resolved.txt; echo '```'
+            else echo "does not resolve"; echo '```'; tail -n 40 resolve.err; echo '```'; fi
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit "$rc"

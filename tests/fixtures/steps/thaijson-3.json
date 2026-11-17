@@ -1,0 +1,52 @@
+{
+ "thai": true,
+ "model": "thai-model-x",
+ "turns_from": "nemotron",
+ "windows": 3,
+ "thai_windows": 2,
+ "turns": [
+  {
+   "start": 2.105,
+   "end": 4.308,
+   "spk": "speaker_0",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "helvix fennow lumvar nirvo"
+  },
+  {
+   "start": 9.632,
+   "end": 25.965,
+   "spk": "speaker_1",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "plimbo quorm fennow"
+  },
+  {
+   "start": 28.945,
+   "end": 31.033,
+   "spk": "speaker_2",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "eskar gostra brimdal helvix jarnoc eskar"
+  },
+  {
+   "start": 35.102,
+   "end": 38.05,
+   "spk": "speaker_2",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "tervin toraph yarsk moxel"
+  },
+  {
+   "start": 38.55,
+   "end": 40.05,
+   "spk": "speaker_2",
+   "p_thai": 0.8,
+   "p_en": 0.05,
+   "text": "zintar abrel"
+  }
+ ],
+ "stats": {
+  "turns": 5
+ }
+}

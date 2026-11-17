@@ -1,0 +1,11 @@
+# Every change needs the maintainer's review; branch protection on main requires it.
+# Listed on their own as well: the model pins and manifests that decide what setup downloads and
+# trusts, the one module that starts processes, and the files that decide what CI and a release run.
+*                                           @RazorII
+/src/audiointake/setup/                     @RazorII
+/src/audiointake/proc.py                    @RazorII
+/src/audiointake/argv.py                    @RazorII
+/claude-plugin/                             @RazorII
+/.github/                                   @RazorII
+/scripts/                                   @RazorII
+/pyproject.toml                             @RazorII

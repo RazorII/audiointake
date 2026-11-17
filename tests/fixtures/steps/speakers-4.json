@@ -1,0 +1,16 @@
+{
+ "labels": {
+  "speaker_0": {
+   "name": "Zorvel",
+   "score": 0.5,
+   "speech_s": 12.0,
+   "why": "named"
+  },
+  "speaker_1": {
+   "name": null,
+   "score": 0.5,
+   "speech_s": 12.0,
+   "why": "below threshold"
+  }
+ }
+}

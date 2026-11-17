@@ -1,0 +1,64 @@
+name: mlx-probe
+
+# A one-off question, asked by hand: can GitHub's macOS runners run audiointake's real models at
+# all? Hosted macOS machines are virtual and have had no Metal device. This job asks MLX to add up
+# four ones on the GPU, and asks Core ML to build and run a tiny model made in code. Its answer
+# decides whether a real-model CI job is ever added; until then the real models are tested on a
+# Mac before each release (scripts/models-local.sh).
+#
+# Safety: started by hand only, with a read-only token and no stored secrets. Every package is
+# pinned exactly. Action versions are pinned to commit SHAs (tests/test_workflows.py).
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    name: probe-${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-15, macos-latest]
+    env:
+      PYTHONUTF8: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6.8.0
+        with:
+          version: "0.13.5"   # the uv the plugin's skill installs
+      - name: Environment
+        run: |
+          uv venv --python 3.12 "$RUNNER_TEMP/probe"
+          uv pip install --python "$RUNNER_TEMP/probe/bin/python" "mlx==0.32.3" "coremltools==9.0" "numpy==2.5.3"
+      - name: MLX and Core ML
+        run: |
+          "$RUNNER_TEMP/probe/bin/python" - <<'PY'
+          import platform
+          print("machine", platform.machine(), "macOS", platform.mac_ver()[0])
+          import mlx.core as mx
+          total = mx.ones(4).sum()
+          mx.eval(total)
+          print("mlx", mx.default_device(), float(total.item()))
+          assert float(total.item()) == 4.0
+          import numpy as np
+          import coremltools as ct
+          from coremltools.converters.mil import Builder as mb
+
+          @mb.program(input_specs=[mb.TensorSpec(shape=(1, 4))], opset_version=ct.target.macOS14)
+          def prog(x):
+              return mb.add(x=x, y=1.0, name="y")
+
+          model = ct.convert(prog, convert_to="mlprogram", minimum_deployment_target=ct.target.macOS14,
+                             compute_units=ct.ComputeUnit.ALL)
+          out = model.predict({"x": np.ones((1, 4), dtype=np.float32)})
+          print("coreml", out)
+          assert np.allclose(out["y"], 2.0)
+          PY

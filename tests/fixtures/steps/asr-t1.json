@@ -1,0 +1,919 @@
+{
+ "text": "Ixtel moxel gostra pelvan rostav quorm plimbo pelvan lumvar. Crondi abrel pelvan velmine gostra. Moxel pelvan nirvo sablo eskar jarnoc zintar crondi nobrax. Moxel quibbet jarnoc fennow brimdal plimbo lumvar ixtel. Moxel ixtel tervin. Abrel dulvo rostav jarnoc mirtel lumvar pelvan helvix nobrax gostra ulmox yarsk. Fennow jarnoc velmine quessa nobrax. Frimble gostra wexo wexo lumvar lumvar snarth ulmox nirvo ixtel mirtel jostik. Glimor frimble zorvel rostav rostav quessa dulvo mirtel lumvar pelvan zintar zintar.",
+ "sentences": [
+  {
+   "text": " Ixtel moxel gostra pelvan rostav quorm plimbo pelvan lumvar.",
+   "start": 0.0,
+   "end": 2.08,
+   "duration": 2.08,
+   "confidence": 0.764,
+   "tokens": [
+    {
+     "text": " Ixtel",
+     "start": 0.0,
+     "end": 0.24,
+     "duration": 0.24,
+     "confidence": 0.883
+    },
+    {
+     "text": " mox",
+     "start": 0.24,
+     "end": 0.56,
+     "duration": 0.32,
+     "confidence": 0.852
+    },
+    {
+     "text": "el",
+     "start": 0.56,
+     "end": 0.64,
+     "duration": 0.08,
+     "confidence": 0.861
+    },
+    {
+     "text": " gostra",
+     "start": 0.64,
+     "end": 0.96,
+     "duration": 0.32,
+     "confidence": 0.586
+    },
+    {
+     "text": " pelvan",
+     "start": 0.96,
+     "end": 1.12,
+     "duration": 0.16,
+     "confidence": 0.934
+    },
+    {
+     "text": " rostav",
+     "start": 1.12,
+     "end": 1.2,
+     "duration": 0.08,
+     "confidence": 0.943
+    },
+    {
+     "text": " quorm",
+     "start": 1.2,
+     "end": 1.28,
+     "duration": 0.08,
+     "confidence": 0.266
+    },
+    {
+     "text": " plim",
+     "start": 1.28,
+     "end": 1.36,
+     "duration": 0.08,
+     "confidence": 0.489
+    },
+    {
+     "text": "bo",
+     "start": 1.36,
+     "end": 1.68,
+     "duration": 0.32,
+     "confidence": 0.952
+    },
+    {
+     "text": " pelvan",
+     "start": 1.68,
+     "end": 1.76,
+     "duration": 0.08,
+     "confidence": 0.372
+    },
+    {
+     "text": " lumv",
+     "start": 1.76,
+     "end": 1.84,
+     "duration": 0.08,
+     "confidence": 0.936
+    },
+    {
+     "text": "ar",
+     "start": 1.84,
+     "end": 2.08,
+     "duration": 0.24,
+     "confidence": 0.913
+    },
+    {
+     "text": ".",
+     "start": 2.08,
+     "end": 2.08,
+     "duration": 0.0,
+     "confidence": 0.948
+    }
+   ]
+  },
+  {
+   "text": " Crondi abrel pelvan velmine gostra.",
+   "start": 3.2,
+   "end": 4.72,
+   "duration": 1.52,
+   "confidence": 0.747,
+   "tokens": [
+    {
+     "text": " Crondi",
+     "start": 3.2,
+     "end": 3.44,
+     "duration": 0.24,
+     "confidence": 0.521
+    },
+    {
+     "text": " ab",
+     "start": 3.44,
+     "end": 3.76,
+     "duration": 0.32,
+     "confidence": 0.911
+    },
+    {
+     "text": "rel",
+     "start": 3.76,
+     "end": 3.92,
+     "duration": 0.16,
+     "confidence": 0.874
+    },
+    {
+     "text": " pel",
+     "start": 3.92,
+     "end": 4.16,
+     "duration": 0.24,
+     "confidence": 0.39
+    },
+    {
+     "text": "van",
+     "start": 4.16,
+     "end": 4.48,
+     "duration": 0.32,
+     "confidence": 0.479
+    },
+    {
+     "text": " velmine",
+     "start": 4.48,
+     "end": 4.64,
+     "duration": 0.16,
+     "confidence": 0.974
+    },
+    {
+     "text": " gostra",
+     "start": 4.64,
+     "end": 4.72,
+     "duration": 0.08,
+     "confidence": 0.859
+    },
+    {
+     "text": ".",
+     "start": 4.72,
+     "end": 4.72,
+     "duration": 0.0,
+     "confidence": 0.971
+    }
+   ]
+  },
+  {
+   "text": " Moxel pelvan nirvo sablo eskar jarnoc zintar crondi nobrax.",
+   "start": 4.88,
+   "end": 7.6,
+   "duration": 2.72,
+   "confidence": 0.763,
+   "tokens": [
+    {
+     "text": " Mo",
+     "start": 4.88,
+     "end": 4.96,
+     "duration": 0.08,
+     "confidence": 0.855
+    },
+    {
+     "text": "xel",
+     "start": 4.96,
+     "end": 5.12,
+     "duration": 0.16,
+     "confidence": 0.869
+    },
+    {
+     "text": " pel",
+     "start": 5.12,
+     "end": 5.44,
+     "duration": 0.32,
+     "confidence": 0.91
+    },
+    {
+     "text": "van",
+     "start": 5.44,
+     "end": 5.52,
+     "duration": 0.08,
+     "confidence": 0.878
+    },
+    {
+     "text": " nirvo",
+     "start": 5.52,
+     "end": 5.68,
+     "duration": 0.16,
+     "confidence": 0.969
+    },
+    {
+     "text": " sablo",
+     "start": 5.68,
+     "end": 5.84,
+     "duration": 0.16,
+     "confidence": 0.87
+    },
+    {
+     "text": " eskar",
+     "start": 5.84,
+     "end": 5.92,
+     "duration": 0.08,
+     "confidence": 0.896
+    },
+    {
+     "text": " jar",
+     "start": 5.92,
+     "end": 6.16,
+     "duration": 0.24,
+     "confidence": 0.897
+    },
+    {
+     "text": "noc",
+     "start": 6.16,
+     "end": 6.32,
+     "duration": 0.16,
+     "confidence": 0.582
+    },
+    {
+     "text": " zi",
+     "start": 6.32,
+     "end": 6.64,
+     "duration": 0.32,
+     "confidence": 0.22
+    },
+    {
+     "text": "ntar",
+     "start": 6.64,
+     "end": 6.96,
+     "duration": 0.32,
+     "confidence": 0.875
+    },
+    {
+     "text": " crondi",
+     "start": 6.96,
+     "end": 7.28,
+     "duration": 0.32,
+     "confidence": 0.238
+    },
+    {
+     "text": " nobr",
+     "start": 7.28,
+     "end": 7.44,
+     "duration": 0.16,
+     "confidence": 0.447
+    },
+    {
+     "text": "ax",
+     "start": 7.44,
+     "end": 7.6,
+     "duration": 0.16,
+     "confidence": 0.988
+    },
+    {
+     "text": ".",
+     "start": 7.6,
+     "end": 7.6,
+     "duration": 0.0,
+     "confidence": 0.949
+    }
+   ]
+  },
+  {
+   "text": " Moxel quibbet jarnoc fennow brimdal plimbo lumvar ixtel.",
+   "start": 7.76,
+   "end": 10.32,
+   "duration": 2.56,
+   "confidence": 0.822,
+   "tokens": [
+    {
+     "text": " Moxel",
+     "start": 7.76,
+     "end": 7.92,
+     "duration": 0.16,
+     "confidence": 0.989
+    },
+    {
+     "text": " quib",
+     "start": 7.92,
+     "end": 8.24,
+     "duration": 0.32,
+     "confidence": 0.933
+    },
+    {
+     "text": "bet",
+     "start": 8.24,
+     "end": 8.56,
+     "duration": 0.32,
+     "confidence": 0.394
+    },
+    {
+     "text": " jarnoc",
+     "start": 8.56,
+     "end": 8.64,
+     "duration": 0.08,
+     "confidence": 0.858
+    },
+    {
+     "text": " fen",
+     "start": 8.64,
+     "end": 8.8,
+     "duration": 0.16,
+     "confidence": 0.925
+    },
+    {
+     "text": "now",
+     "start": 8.8,
+     "end": 8.96,
+     "duration": 0.16,
+     "confidence": 0.447
+    },
+    {
+     "text": " br",
+     "start": 8.96,
+     "end": 9.2,
+     "duration": 0.24,
+     "confidence": 0.932
+    },
+    {
+     "text": "imdal",
+     "start": 9.2,
+     "end": 9.36,
+     "duration": 0.16,
+     "confidence": 0.574
+    },
+    {
+     "text": " plimbo",
+     "start": 9.36,
+     "end": 9.68,
+     "duration": 0.32,
+     "confidence": 0.994
+    },
+    {
+     "text": " lumv",
+     "start": 9.68,
+     "end": 9.92,
+     "duration": 0.24,
+     "confidence": 0.905
+    },
+    {
+     "text": "ar",
+     "start": 9.92,
+     "end": 10.16,
+     "duration": 0.24,
+     "confidence": 0.981
+    },
+    {
+     "text": " ixtel",
+     "start": 10.16,
+     "end": 10.32,
+     "duration": 0.16,
+     "confidence": 0.894
+    },
+    {
+     "text": ".",
+     "start": 10.32,
+     "end": 10.32,
+     "duration": 0.0,
+     "confidence": 0.861
+    }
+   ]
+  },
+  {
+   "text": " Moxel ixtel tervin.",
+   "start": 11.28,
+   "end": 11.92,
+   "duration": 0.64,
+   "confidence": 0.873,
+   "tokens": [
+    {
+     "text": " Moxel",
+     "start": 11.28,
+     "end": 11.36,
+     "duration": 0.08,
+     "confidence": 0.909
+    },
+    {
+     "text": " ixt",
+     "start": 11.36,
+     "end": 11.6,
+     "duration": 0.24,
+     "confidence": 0.93
+    },
+    {
+     "text": "el",
+     "start": 11.6,
+     "end": 11.76,
+     "duration": 0.16,
+     "confidence": 0.999
+    },
+    {
+     "text": " te",
+     "start": 11.76,
+     "end": 11.84,
+     "duration": 0.08,
+     "confidence": 0.501
+    },
+    {
+     "text": "rvin",
+     "start": 11.84,
+     "end": 11.92,
+     "duration": 0.08,
+     "confidence": 0.936
+    },
+    {
+     "text": ".",
+     "start": 11.92,
+     "end": 11.92,
+     "duration": 0.0,
+     "confidence": 0.963
+    }
+   ]
+  },
+  {
+   "text": " Abrel dulvo rostav jarnoc mirtel lumvar pelvan helvix nobrax gostra ulmox yarsk.",
+   "start": 12.24,
+   "end": 15.68,
+   "duration": 3.44,
+   "confidence": 0.751,
+   "tokens": [
+    {
+     "text": " Ab",
+     "start": 12.24,
+     "end": 12.32,
+     "duration": 0.08,
+     "confidence": 0.9
+    },
+    {
+     "text": "rel",
+     "start": 12.32,
+     "end": 12.4,
+     "duration": 0.08,
+     "confidence": 0.864
+    },
+    {
+     "text": " dul",
+     "start": 12.4,
+     "end": 12.48,
+     "duration": 0.08,
+     "confidence": 0.233
+    },
+    {
+     "text": "vo",
+     "start": 12.48,
+     "end": 12.72,
+     "duration": 0.24,
+     "confidence": 0.872
+    },
+    {
+     "text": " ro",
+     "start": 12.72,
+     "end": 12.88,
+     "duration": 0.16,
+     "confidence": 0.852
+    },
+    {
+     "text": "stav",
+     "start": 12.88,
+     "end": 13.2,
+     "duration": 0.32,
+     "confidence": 0.871
+    },
+    {
+     "text": " jarnoc",
+     "start": 13.2,
+     "end": 13.44,
+     "duration": 0.24,
+     "confidence": 0.212
+    },
+    {
+     "text": " mir",
+     "start": 13.44,
+     "end": 13.76,
+     "duration": 0.32,
+     "confidence": 0.883
+    },
+    {
+     "text": "tel",
+     "start": 13.76,
+     "end": 13.84,
+     "duration": 0.08,
+     "confidence": 0.92
+    },
+    {
+     "text": " lumvar",
+     "start": 13.84,
+     "end": 13.92,
+     "duration": 0.08,
+     "confidence": 0.874
+    },
+    {
+     "text": " pelvan",
+     "start": 13.92,
+     "end": 14.0,
+     "duration": 0.08,
+     "confidence": 0.947
+    },
+    {
+     "text": " helvix",
+     "start": 14.0,
+     "end": 14.32,
+     "duration": 0.32,
+     "confidence": 0.222
+    },
+    {
+     "text": " nobrax",
+     "start": 14.32,
+     "end": 14.48,
+     "duration": 0.16,
+     "confidence": 0.942
+    },
+    {
+     "text": " gostra",
+     "start": 14.48,
+     "end": 14.64,
+     "duration": 0.16,
+     "confidence": 0.951
+    },
+    {
+     "text": " ulm",
+     "start": 14.64,
+     "end": 14.88,
+     "duration": 0.24,
+     "confidence": 0.905
+    },
+    {
+     "text": "ox",
+     "start": 14.88,
+     "end": 15.04,
+     "duration": 0.16,
+     "confidence": 0.548
+    },
+    {
+     "text": " yar",
+     "start": 15.04,
+     "end": 15.36,
+     "duration": 0.32,
+     "confidence": 1.0
+    },
+    {
+     "text": "sk",
+     "start": 15.36,
+     "end": 15.68,
+     "duration": 0.32,
+     "confidence": 0.282
+    },
+    {
+     "text": ".",
+     "start": 15.68,
+     "end": 15.68,
+     "duration": 0.0,
+     "confidence": 0.994
+    }
+   ]
+  },
+  {
+   "text": " Fennow jarnoc velmine quessa nobrax.",
+   "start": 16.8,
+   "end": 18.24,
+   "duration": 1.44,
+   "confidence": 0.697,
+   "tokens": [
+    {
+     "text": " Fennow",
+     "start": 16.8,
+     "end": 16.88,
+     "duration": 0.08,
+     "confidence": 0.886
+    },
+    {
+     "text": " jarnoc",
+     "start": 16.88,
+     "end": 17.12,
+     "duration": 0.24,
+     "confidence": 0.466
+    },
+    {
+     "text": " velm",
+     "start": 17.12,
+     "end": 17.44,
+     "duration": 0.32,
+     "confidence": 0.96
+    },
+    {
+     "text": "ine",
+     "start": 17.44,
+     "end": 17.68,
+     "duration": 0.24,
+     "confidence": 0.4
+    },
+    {
+     "text": " quessa",
+     "start": 17.68,
+     "end": 17.92,
+     "duration": 0.24,
+     "confidence": 0.369
+    },
+    {
+     "text": " nobrax",
+     "start": 17.92,
+     "end": 18.24,
+     "duration": 0.32,
+     "confidence": 0.884
+    },
+    {
+     "text": ".",
+     "start": 18.24,
+     "end": 18.24,
+     "duration": 0.0,
+     "confidence": 0.917
+    }
+   ]
+  },
+  {
+   "text": " Frimble gostra wexo wexo lumvar lumvar snarth ulmox nirvo ixtel mirtel jostik.",
+   "start": 19.36,
+   "end": 22.88,
+   "duration": 3.52,
+   "confidence": 0.751,
+   "tokens": [
+    {
+     "text": " Frimble",
+     "start": 19.36,
+     "end": 19.6,
+     "duration": 0.24,
+     "confidence": 0.864
+    },
+    {
+     "text": " gos",
+     "start": 19.6,
+     "end": 19.76,
+     "duration": 0.16,
+     "confidence": 0.575
+    },
+    {
+     "text": "tra",
+     "start": 19.76,
+     "end": 19.84,
+     "duration": 0.08,
+     "confidence": 0.991
+    },
+    {
+     "text": " wexo",
+     "start": 19.84,
+     "end": 20.16,
+     "duration": 0.32,
+     "confidence": 0.377
+    },
+    {
+     "text": " wexo",
+     "start": 20.16,
+     "end": 20.4,
+     "duration": 0.24,
+     "confidence": 0.305
+    },
+    {
+     "text": " lu",
+     "start": 20.4,
+     "end": 20.64,
+     "duration": 0.24,
+     "confidence": 0.971
+    },
+    {
+     "text": "mvar",
+     "start": 20.64,
+     "end": 20.72,
+     "duration": 0.08,
+     "confidence": 0.37
+    },
+    {
+     "text": " lumvar",
+     "start": 20.72,
+     "end": 20.96,
+     "duration": 0.24,
+     "confidence": 0.993
+    },
+    {
+     "text": " snarth",
+     "start": 20.96,
+     "end": 21.12,
+     "duration": 0.16,
+     "confidence": 0.519
+    },
+    {
+     "text": " ulmox",
+     "start": 21.12,
+     "end": 21.28,
+     "duration": 0.16,
+     "confidence": 0.949
+    },
+    {
+     "text": " ni",
+     "start": 21.28,
+     "end": 21.6,
+     "duration": 0.32,
+     "confidence": 0.997
+    },
+    {
+     "text": "rvo",
+     "start": 21.6,
+     "end": 21.76,
+     "duration": 0.16,
+     "confidence": 0.49
+    },
+    {
+     "text": " ix",
+     "start": 21.76,
+     "end": 21.92,
+     "duration": 0.16,
+     "confidence": 0.96
+    },
+    {
+     "text": "tel",
+     "start": 21.92,
+     "end": 22.08,
+     "duration": 0.16,
+     "confidence": 0.859
+    },
+    {
+     "text": " mirt",
+     "start": 22.08,
+     "end": 22.4,
+     "duration": 0.32,
+     "confidence": 0.982
+    },
+    {
+     "text": "el",
+     "start": 22.4,
+     "end": 22.48,
+     "duration": 0.08,
+     "confidence": 0.956
+    },
+    {
+     "text": " jost",
+     "start": 22.48,
+     "end": 22.8,
+     "duration": 0.32,
+     "confidence": 0.231
+    },
+    {
+     "text": "ik",
+     "start": 22.8,
+     "end": 22.88,
+     "duration": 0.08,
+     "confidence": 0.883
+    },
+    {
+     "text": ".",
+     "start": 22.88,
+     "end": 22.88,
+     "duration": 0.0,
+     "confidence": 0.991
+    }
+   ]
+  },
+  {
+   "text": " Glimor frimble zorvel rostav rostav quessa dulvo mirtel lumvar pelvan zintar zintar.",
+   "start": 23.2,
+   "end": 27.12,
+   "duration": 3.92,
+   "confidence": 0.841,
+   "tokens": [
+    {
+     "text": " Glim",
+     "start": 23.2,
+     "end": 23.36,
+     "duration": 0.16,
+     "confidence": 0.996
+    },
+    {
+     "text": "or",
+     "start": 23.36,
+     "end": 23.68,
+     "duration": 0.32,
+     "confidence": 0.864
+    },
+    {
+     "text": " frimble",
+     "start": 23.68,
+     "end": 23.92,
+     "duration": 0.24,
+     "confidence": 0.855
+    },
+    {
+     "text": " zorv",
+     "start": 23.92,
+     "end": 24.0,
+     "duration": 0.08,
+     "confidence": 0.918
+    },
+    {
+     "text": "el",
+     "start": 24.0,
+     "end": 24.16,
+     "duration": 0.16,
+     "confidence": 0.455
+    },
+    {
+     "text": " ro",
+     "start": 24.16,
+     "end": 24.24,
+     "duration": 0.08,
+     "confidence": 0.97
+    },
+    {
+     "text": "stav",
+     "start": 24.24,
+     "end": 24.56,
+     "duration": 0.32,
+     "confidence": 0.934
+    },
+    {
+     "text": " rostav",
+     "start": 24.56,
+     "end": 24.72,
+     "duration": 0.16,
+     "confidence": 0.9
+    },
+    {
+     "text": " ques",
+     "start": 24.72,
+     "end": 24.96,
+     "duration": 0.24,
+     "confidence": 0.979
+    },
+    {
+     "text": "sa",
+     "start": 24.96,
+     "end": 25.12,
+     "duration": 0.16,
+     "confidence": 0.884
+    },
+    {
+     "text": " du",
+     "start": 25.12,
+     "end": 25.28,
+     "duration": 0.16,
+     "confidence": 0.854
+    },
+    {
+     "text": "lvo",
+     "start": 25.28,
+     "end": 25.44,
+     "duration": 0.16,
+     "confidence": 0.231
+    },
+    {
+     "text": " mirtel",
+     "start": 25.44,
+     "end": 25.76,
+     "duration": 0.32,
+     "confidence": 0.926
+    },
+    {
+     "text": " lumv",
+     "start": 25.76,
+     "end": 26.08,
+     "duration": 0.32,
+     "confidence": 0.943
+    },
+    {
+     "text": "ar",
+     "start": 26.08,
+     "end": 26.4,
+     "duration": 0.32,
+     "confidence": 0.478
+    },
+    {
+     "text": " pelvan",
+     "start": 26.4,
+     "end": 26.64,
+     "duration": 0.24,
+     "confidence": 0.984
+    },
+    {
+     "text": " zintar",
+     "start": 26.64,
+     "end": 26.8,
+     "duration": 0.16,
+     "confidence": 0.964
+    },
+    {
+     "text": " zintar",
+     "start": 26.8,
+     "end": 27.12,
+     "duration": 0.32,
+     "confidence": 0.916
+    },
+    {
+     "text": ".",
+     "start": 27.12,
+     "end": 27.12,
+     "duration": 0.0,
+     "confidence": 0.934
+    }
+   ]
+  }
+ ]
+}

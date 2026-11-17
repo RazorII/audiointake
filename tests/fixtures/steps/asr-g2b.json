@@ -1,0 +1,307 @@
+{
+ "text": "yarsk glimor nirvo quibbet. Zintar mirtel velmine prandle pelvan. Dulvo hastrel vandrel frimble jostik glimor. Helvix velmine wexo moxel dravik gostra gostra pelvan.",
+ "sentences": [
+  {
+   "text": " yarsk glimor nirvo quibbet.",
+   "start": 0.4,
+   "end": 1.44,
+   "duration": 1.04,
+   "confidence": 0.93,
+   "tokens": [
+    {
+     "text": " yarsk",
+     "start": 0.4,
+     "end": 0.72,
+     "duration": 0.32,
+     "confidence": 0.16
+    },
+    {
+     "text": " glimor",
+     "start": 0.72,
+     "end": 0.88,
+     "duration": 0.16,
+     "confidence": 0.164
+    },
+    {
+     "text": " ni",
+     "start": 0.88,
+     "end": 1.2,
+     "duration": 0.32,
+     "confidence": 0.887
+    },
+    {
+     "text": "rvo",
+     "start": 1.2,
+     "end": 1.28,
+     "duration": 0.08,
+     "confidence": 0.907
+    },
+    {
+     "text": " quibbet",
+     "start": 1.28,
+     "end": 1.44,
+     "duration": 0.16,
+     "confidence": 0.962
+    },
+    {
+     "text": ".",
+     "start": 1.44,
+     "end": 1.44,
+     "duration": 0.0,
+     "confidence": 0.915
+    }
+   ]
+  },
+  {
+   "text": " Zintar mirtel velmine prandle pelvan.",
+   "start": 2.0,
+   "end": 3.12,
+   "duration": 1.12,
+   "confidence": 0.96,
+   "tokens": [
+    {
+     "text": " Zintar",
+     "start": 2.0,
+     "end": 2.24,
+     "duration": 0.24,
+     "confidence": 0.946
+    },
+    {
+     "text": " mirt",
+     "start": 2.24,
+     "end": 2.56,
+     "duration": 0.32,
+     "confidence": 0.438
+    },
+    {
+     "text": "el",
+     "start": 2.56,
+     "end": 2.72,
+     "duration": 0.16,
+     "confidence": 0.961
+    },
+    {
+     "text": " velmine",
+     "start": 2.72,
+     "end": 2.88,
+     "duration": 0.16,
+     "confidence": 0.996
+    },
+    {
+     "text": " prandle",
+     "start": 2.88,
+     "end": 2.96,
+     "duration": 0.08,
+     "confidence": 0.372
+    },
+    {
+     "text": " pelvan",
+     "start": 2.96,
+     "end": 3.12,
+     "duration": 0.16,
+     "confidence": 0.967
+    },
+    {
+     "text": ".",
+     "start": 3.12,
+     "end": 3.12,
+     "duration": 0.0,
+     "confidence": 0.928
+    }
+   ]
+  },
+  {
+   "text": " Dulvo hastrel vandrel frimble jostik glimor.",
+   "start": 4.24,
+   "end": 7.04,
+   "duration": 2.8,
+   "confidence": 0.927,
+   "tokens": [
+    {
+     "text": " Dul",
+     "start": 4.24,
+     "end": 4.48,
+     "duration": 0.24,
+     "confidence": 0.917
+    },
+    {
+     "text": "vo",
+     "start": 4.48,
+     "end": 4.64,
+     "duration": 0.16,
+     "confidence": 0.953
+    },
+    {
+     "text": " hastr",
+     "start": 4.64,
+     "end": 4.8,
+     "duration": 0.16,
+     "confidence": 0.878
+    },
+    {
+     "text": "el",
+     "start": 4.8,
+     "end": 5.12,
+     "duration": 0.32,
+     "confidence": 0.881
+    },
+    {
+     "text": " van",
+     "start": 5.28,
+     "end": 5.6,
+     "duration": 0.32,
+     "confidence": 0.965
+    },
+    {
+     "text": "drel",
+     "start": 5.6,
+     "end": 5.92,
+     "duration": 0.32,
+     "confidence": 0.888
+    },
+    {
+     "text": " fri",
+     "start": 5.92,
+     "end": 6.24,
+     "duration": 0.32,
+     "confidence": 0.947
+    },
+    {
+     "text": "mble",
+     "start": 6.24,
+     "end": 6.4,
+     "duration": 0.16,
+     "confidence": 0.994
+    },
+    {
+     "text": " jo",
+     "start": 6.4,
+     "end": 6.48,
+     "duration": 0.08,
+     "confidence": 0.468
+    },
+    {
+     "text": "stik",
+     "start": 6.48,
+     "end": 6.72,
+     "duration": 0.24,
+     "confidence": 0.875
+    },
+    {
+     "text": " gli",
+     "start": 6.72,
+     "end": 6.88,
+     "duration": 0.16,
+     "confidence": 0.859
+    },
+    {
+     "text": "mor",
+     "start": 6.88,
+     "end": 7.04,
+     "duration": 0.16,
+     "confidence": 0.988
+    },
+    {
+     "text": ".",
+     "start": 7.04,
+     "end": 7.04,
+     "duration": 0.0,
+     "confidence": 0.87
+    }
+   ]
+  },
+  {
+   "text": " Helvix velmine wexo moxel dravik gostra gostra pelvan.",
+   "start": 7.92,
+   "end": 10.4,
+   "duration": 2.48,
+   "confidence": 0.922,
+   "tokens": [
+    {
+     "text": " Helvix",
+     "start": 7.92,
+     "end": 8.24,
+     "duration": 0.32,
+     "confidence": 0.926
+    },
+    {
+     "text": " velm",
+     "start": 8.24,
+     "end": 8.4,
+     "duration": 0.16,
+     "confidence": 0.891
+    },
+    {
+     "text": "ine",
+     "start": 8.4,
+     "end": 8.56,
+     "duration": 0.16,
+     "confidence": 0.933
+    },
+    {
+     "text": " wexo",
+     "start": 8.56,
+     "end": 8.64,
+     "duration": 0.08,
+     "confidence": 0.222
+    },
+    {
+     "text": " moxel",
+     "start": 8.64,
+     "end": 8.72,
+     "duration": 0.08,
+     "confidence": 0.947
+    },
+    {
+     "text": " dra",
+     "start": 8.72,
+     "end": 8.88,
+     "duration": 0.16,
+     "confidence": 0.967
+    },
+    {
+     "text": "vik",
+     "start": 8.88,
+     "end": 9.04,
+     "duration": 0.16,
+     "confidence": 0.91
+    },
+    {
+     "text": " gostra",
+     "start": 9.04,
+     "end": 9.36,
+     "duration": 0.32,
+     "confidence": 0.901
+    },
+    {
+     "text": " go",
+     "start": 9.36,
+     "end": 9.68,
+     "duration": 0.32,
+     "confidence": 0.889
+    },
+    {
+     "text": "stra",
+     "start": 9.68,
+     "end": 10.0,
+     "duration": 0.32,
+     "confidence": 0.923
+    },
+    {
+     "text": " pelvan",
+     "start": 10.0,
+     "end": 10.16,
+     "duration": 0.16,
+     "confidence": 0.856
+    },
+    {
+     "text": ".",
+     "start": 10.4,
+     "end": 10.4,
+     "duration": 0.0,
+     "confidence": 0.958
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "audiointake",
+  "displayName": "audiointake",
+  "version": "0.1.0",
+  "description": "Transcribe recordings on your Mac with Apple silicon and turn them into meeting notes: speakers told apart word by word, the ones whose voices you enrolled named, then a summary, decisions and action items above the speaker-labelled transcript. Transcription runs on your Mac and never goes online. Core reads English, Spanish, German and 22 more European languages; optional packs add Hungarian and Thai.",
+  "author": {
+    "name": "RazorII",
+    "url": "https://github.com/RazorII"
+  },
+  "homepage": "https://github.com/RazorII/audiointake",
+  "repository": "https://github.com/RazorII/audiointake",
+  "documentationUrl": "https://github.com/RazorII/audiointake#readme",
+  "license": "MIT",
+  "keywords": ["transcription", "meeting-notes", "diarization", "speakers", "voice-memos", "apple-silicon", "multilingual"],
+  "privacyPolicyUrl": "https://github.com/RazorII/audiointake/blob/main/PRIVACY.md"
+}

@@ -1,0 +1,97 @@
+name: test
+
+# The test suite on macOS with Apple silicon, the only platform audiointake runs on. Every model is
+# replaced by a fake engine (tests/fakes/), so no job downloads a model or needs the Mac's GPU.
+#
+# suite    the whole suite on the oldest and the newest runner and Python audiointake supports.
+# offline  the fake-engine end-to-end tests (marker cli_subprocess) with every network operation
+#          denied by sandbox-exec; tests/conftest.py's audit hook records any attempt as well.
+# ci-ok    passes only when both jobs passed: the one check to read before merging a pull request.
+#
+# Actions are pinned to commit SHAs with their tag in a comment (tests/test_workflows.py), and a
+# value reaches a script only through env:, never as an expression inside it.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  PYTHONUTF8: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+
+jobs:
+  suite:
+    name: ${{ matrix.job }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { job: mac-floor, os: macos-15, python: "3.12" }
+          - { job: mac-new, os: macos-latest, python: "3.14" }
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: ${{ matrix.python }}
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6.8.0
+        with:
+          version: "0.13.5"   # the uv the plugin's skill installs
+      - name: Install
+        env:
+          PY: ${{ matrix.python }}
+          VIRTUAL_ENV: ${{ runner.temp }}/venv
+        run: bash scripts/dev-install.sh --python "$PY"
+      - name: Tests
+        run: python -m pytest -p no:cacheprovider -q -rs
+
+  offline:
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.14"
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6.8.0
+        with:
+          version: "0.13.5"   # the uv the plugin's skill installs
+      - name: Install
+        env:
+          VIRTUAL_ENV: ${{ runner.temp }}/venv
+        run: bash scripts/dev-install.sh --python 3.14
+      # The selection must hold a whole transcription, not only the signal and lock tests: a job that
+      # selects too little would pass without proving that transcribing never goes online.
+      - name: Check what the offline run selects
+        run: |
+          sel="$(python -m pytest -p no:cacheprovider -q --collect-only -m "cli_subprocess and not network")"
+          echo "$sel"
+          grep -q 'tests/test_workflows.py::test_the_offline_job_transcribes_end_to_end' <<< "$sel" \
+            || { echo "::error::the offline selection has no end-to-end transcription"; exit 1; }
+      - name: End to end on fake engines, network denied
+        run: |
+          sandbox-exec -p '(version 1)(allow default)(deny network*)' \
+            python -m pytest -p no:cacheprovider -q -rs -m "cli_subprocess and not network"
+
+  ci-ok:
+    if: always()
+    needs: [suite, offline]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Every test job passed
+        env:
+          SUITE: ${{ needs.suite.result }}
+          OFFLINE: ${{ needs.offline.result }}
+        run: |
+          echo "suite: $SUITE, offline: $OFFLINE"
+          [ "$SUITE" = success ] && [ "$OFFLINE" = success ]

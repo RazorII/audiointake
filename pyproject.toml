@@ -1,0 +1,76 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "audiointake"
+dynamic = ["version"]
+description = "Transcribe recordings on a Mac with Apple silicon, with speakers named word by word."
+readme = "README.md"
+requires-python = ">=3.12,<3.15"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "RazorII" }]
+keywords = ["transcription", "speech-to-text", "diarization", "speakers", "meeting-notes", "apple-silicon", "mlx"]
+classifiers = [
+  "Environment :: Console",
+  "Operating System :: MacOS",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+  "Topic :: Office/Business",
+]
+# Exact pins: these decide what the transcripts contain, so a fresh install reads audio exactly as the tested one.
+dependencies = [
+  "parakeet-mlx==0.5.3",
+  "mlx-whisper==0.4.3",
+  "mlx==0.32.3",
+  "mlx-metal==0.32.3",
+  "numpy==2.5.3",
+  "scipy==1.18.1",
+  "librosa==1.0.0",
+  "numba==0.68.0",
+  "soxr==1.1.0",
+  "tiktoken==0.14.0",
+  "huggingface-hub==2.1.1",
+  "sherpa-onnx==2.0.1",
+  "sherpa-onnx-core==2.0.1",
+  "soundfile==0.14.0",
+  # The fallback ffmpeg (ffmpeg only, no ffprobe) for a Mac without Homebrew; used only when no ffmpeg is found.
+  "imageio-ffmpeg==0.8.1",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "jsonschema"]
+# FLEURS parquet reading (pyarrow) and Thai character error rate (pythainlp) for bench/.
+bench = ["pyarrow", "pythainlp"]
+
+[project.scripts]
+audiointake = "audiointake.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/RazorII/audiointake"
+Issues = "https://github.com/RazorII/audiointake/issues"
+
+[tool.hatch.version]
+path = "src/audiointake/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/audiointake"]
+
+[tool.hatch.build.targets.sdist]
+exclude = ["/.github", "/claude-plugin"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+pythonpath = ["tests"]
+addopts = "-ra -p no:cacheprovider"
+markers = [
+  "network: may open sockets beyond loopback; every other test runs with the network blocked (tests/conftest.py)",
+  "cli_subprocess: starts the audiointake CLI in a subprocess",
+  "models: needs the real models on a Mac with Apple silicon; scripts/models-local.sh runs pytest -m models before a release",
+  "host_memory: reads this Mac's real memory; every other test sees a measured size (tests/conftest.py)",
+]

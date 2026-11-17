@@ -1,0 +1,995 @@
+{
+ "format": 1,
+ "cases": [
+  {
+   "kind": "ensemble",
+   "cli": [
+    "gapfill",
+    "asr-g1a.json",
+    "asr-g1b.json",
+    "{out}"
+   ],
+   "expect": "out-gapfill-1.json",
+   "stdout": "",
+   "stderr": "gapfill: +7 words in 6 places (0 new sentences); primary 61 words\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "gapfill",
+    "asr-g1a.json",
+    "asr-g1b.json",
+    "{out}",
+    "--tau",
+    "0.7"
+   ],
+   "expect": "out-gapfill-1-tau.json",
+   "stdout": "",
+   "stderr": "gapfill: +7 words in 6 places (0 new sentences); primary 61 words\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "gapfill",
+    "asr-g2a.json",
+    "asr-g2b.json",
+    "{out}"
+   ],
+   "expect": "out-gapfill-2.json",
+   "stdout": "",
+   "stderr": "gapfill: +5 words in 3 places (0 new sentences); primary 17 words\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "gapfill",
+    "asr-g2a.json",
+    "asr-g2b.json",
+    "{out}",
+    "--tau",
+    "0.7"
+   ],
+   "expect": "out-gapfill-2-tau.json",
+   "stdout": "",
+   "stderr": "gapfill: +1 words in 1 places (0 new sentences); primary 17 words\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "gapfill",
+    "asr-g3a.json",
+    "asr-g3b.json",
+    "{out}"
+   ],
+   "expect": "out-gapfill-3.json",
+   "stdout": "",
+   "stderr": "gapfill: +2 words in 2 places (0 new sentences); primary 68 words\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "gapfill",
+    "asr-g3a.json",
+    "asr-g3b.json",
+    "{out}",
+    "--tau",
+    "0.7"
+   ],
+   "expect": "out-gapfill-3-tau.json",
+   "stdout": "",
+   "stderr": "gapfill: +2 words in 2 places (0 new sentences); primary 68 words\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "gapfill",
+    "asr-g4a.json",
+    "asr-g4b.json",
+    "{out}"
+   ],
+   "expect": "out-gapfill-4.json",
+   "stdout": "",
+   "stderr": "gapfill: +26 words in 11 places (0 new sentences); primary 59 words\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "gapfill",
+    "asr-g4a.json",
+    "asr-g4b.json",
+    "{out}",
+    "--tau",
+    "0.7"
+   ],
+   "expect": "out-gapfill-4-tau.json",
+   "stdout": "",
+   "stderr": "gapfill: +7 words in 5 places (0 new sentences); primary 59 words\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "gapfill",
+    "asr-g5a.json",
+    "asr-g5b.json",
+    "{out}"
+   ],
+   "expect": "out-gapfill-5.json",
+   "stdout": "",
+   "stderr": "gapfill: +39 words in 11 places (1 new sentences); primary 44 words\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "gapfill",
+    "asr-g5a.json",
+    "asr-g5b.json",
+    "{out}",
+    "--tau",
+    "0.7"
+   ],
+   "expect": "out-gapfill-5-tau.json",
+   "stdout": "",
+   "stderr": "gapfill: +39 words in 11 places (1 new sentences); primary 44 words\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "hu",
+    "whisper-1.json",
+    "asr-v1u.json",
+    "asr-v1v.json",
+    "{wav}",
+    "{out}"
+   ],
+   "wav": {
+    "seconds": 80.0,
+    "kind": "bursts"
+   },
+   "expect": "out-vote-1.json",
+   "stdout": "",
+   "stderr": "hu: voted=5 replaced=5 dropped=1 collapsed=1 filled=2 fill_words=8; whisper 11 segments\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "hu",
+    "whisper-2.json",
+    "asr-v2u.json",
+    "asr-v2v.json",
+    "{wav}",
+    "{out}"
+   ],
+   "wav": {
+    "seconds": 80.0,
+    "kind": "bursts"
+   },
+   "expect": "out-vote-2.json",
+   "stdout": "",
+   "stderr": "hu: voted=6 replaced=5 dropped=1 collapsed=1 filled=2 fill_words=8; whisper 11 segments\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "thai",
+    "asr-t1.json",
+    "thaijson-1.json",
+    "{out}"
+   ],
+   "expect": "out-thai-1.json",
+   "stdout": "",
+   "stderr": "thai: 5 Thai turns (0.2 min) in place of 74 Parakeet words\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "thai",
+    "asr-t2.json",
+    "thaijson-2.json",
+    "{out}"
+   ],
+   "expect": "out-thai-2.json",
+   "stdout": "",
+   "stderr": "thai: 4 Thai turns (0.1 min) in place of 37 Parakeet words\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "thai",
+    "out-vote-1.json",
+    "thaijson-3.json",
+    "{out}"
+   ],
+   "expect": "out-thai-3.json",
+   "stdout": "",
+   "stderr": "thai: 5 Thai turns (0.4 min) in place of 20 Parakeet words\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "thai",
+    "out-gapfill-1.json",
+    "thaijson-4.json",
+    "{out}"
+   ],
+   "expect": "out-thai-4.json",
+   "stdout": "",
+   "stderr": "thai: 9 Thai turns (0.2 min) in place of 55 Parakeet words\n"
+  },
+  {
+   "kind": "lang",
+   "golden": "lang-200.json",
+   "n": 200,
+   "voted": 70
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "lang",
+    {
+     "lang_seed": 0
+    }
+   ],
+   "stdout": "other\n",
+   "stderr": "lang: hu-word share 0.074\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "lang",
+    {
+     "lang_seed": 1
+    }
+   ],
+   "stdout": "other\n",
+   "stderr": "lang: hu-word share 0.091\n"
+  },
+  {
+   "kind": "ensemble",
+   "cli": [
+    "lang",
+    {
+     "lang_seed": 2
+    }
+   ],
+   "stdout": "other\n",
+   "stderr": "lang: hu-word share 0.000\n"
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "asr-m1.json",
+    "{rttm:diar-1.rttm.txt}",
+    "{out}",
+    "--names",
+    "{names:speakers-1.json}"
+   ],
+   "expect": "out-merge-1-names.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "asr-m1.json",
+    "{rttm:diar-1.rttm.txt}",
+    "{out}"
+   ],
+   "expect": "out-merge-1-plain.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "asr-m1.json",
+    "{rttm:diar-1.rttm.txt}",
+    "{out}",
+    "--sentences"
+   ],
+   "expect": "out-merge-1-sentences.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "asr-m1.json",
+    "{rttm:diar-1.rttm.txt}",
+    "{out}",
+    "--names",
+    "{names:speakers-1.json}",
+    "--sentences"
+   ],
+   "expect": "out-merge-1-sentences-names.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "--count-speakers",
+    "{rttm:diar-1.rttm.txt}"
+   ],
+   "stdout": "3\n",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "asr-m2.json",
+    "{rttm:diar-2.rttm.txt}",
+    "{out}",
+    "--names",
+    "{names:speakers-2.json}"
+   ],
+   "expect": "out-merge-2-names.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "asr-m2.json",
+    "{rttm:diar-2.rttm.txt}",
+    "{out}"
+   ],
+   "expect": "out-merge-2-plain.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "asr-m2.json",
+    "{rttm:diar-2.rttm.txt}",
+    "{out}",
+    "--sentences"
+   ],
+   "expect": "out-merge-2-sentences.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "asr-m2.json",
+    "{rttm:diar-2.rttm.txt}",
+    "{out}",
+    "--names",
+    "{names:speakers-2.json}",
+    "--sentences"
+   ],
+   "expect": "out-merge-2-sentences-names.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "--count-speakers",
+    "{rttm:diar-2.rttm.txt}"
+   ],
+   "stdout": "2\n",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "asr-m3.json",
+    "{rttm:diar-3.rttm.txt}",
+    "{out}",
+    "--names",
+    "{names:speakers-3.json}"
+   ],
+   "expect": "out-merge-3-names.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "asr-m3.json",
+    "{rttm:diar-3.rttm.txt}",
+    "{out}"
+   ],
+   "expect": "out-merge-3-plain.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "asr-m3.json",
+    "{rttm:diar-3.rttm.txt}",
+    "{out}",
+    "--sentences"
+   ],
+   "expect": "out-merge-3-sentences.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "asr-m3.json",
+    "{rttm:diar-3.rttm.txt}",
+    "{out}",
+    "--names",
+    "{names:speakers-3.json}",
+    "--sentences"
+   ],
+   "expect": "out-merge-3-sentences-names.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "--count-speakers",
+    "{rttm:diar-3.rttm.txt}"
+   ],
+   "stdout": "4\n",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "out-vote-1.json",
+    "{rttm:diar-4.rttm.txt}",
+    "{out}",
+    "--names",
+    "{names:speakers-4.json}"
+   ],
+   "expect": "out-merge-4-names.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "out-vote-1.json",
+    "{rttm:diar-4.rttm.txt}",
+    "{out}"
+   ],
+   "expect": "out-merge-4-plain.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "out-vote-1.json",
+    "{rttm:diar-4.rttm.txt}",
+    "{out}",
+    "--sentences"
+   ],
+   "expect": "out-merge-4-sentences.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "out-vote-1.json",
+    "{rttm:diar-4.rttm.txt}",
+    "{out}",
+    "--names",
+    "{names:speakers-4.json}",
+    "--sentences"
+   ],
+   "expect": "out-merge-4-sentences-names.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "--count-speakers",
+    "{rttm:diar-4.rttm.txt}"
+   ],
+   "stdout": "2\n",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "out-thai-1.json",
+    "{rttm:diar-1.rttm.txt}",
+    "{out}",
+    "--names",
+    "{names:speakers-5.json}"
+   ],
+   "expect": "out-merge-5-names.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "out-thai-1.json",
+    "{rttm:diar-1.rttm.txt}",
+    "{out}"
+   ],
+   "expect": "out-merge-5-plain.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "out-thai-1.json",
+    "{rttm:diar-1.rttm.txt}",
+    "{out}",
+    "--sentences"
+   ],
+   "expect": "out-merge-5-sentences.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "out-thai-1.json",
+    "{rttm:diar-1.rttm.txt}",
+    "{out}",
+    "--names",
+    "{names:speakers-5.json}",
+    "--sentences"
+   ],
+   "expect": "out-merge-5-sentences-names.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "--count-speakers",
+    "{rttm:diar-1.rttm.txt}"
+   ],
+   "stdout": "3\n",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "asr-m1.json",
+    "{rttm:diar-empty.rttm.txt}",
+    "{out}"
+   ],
+   "expect": "out-merge-1-empty.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "asr-m1.json",
+    "",
+    "{out}"
+   ],
+   "expect": "out-merge-1-none.txt",
+   "stdout": "",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "--count-speakers",
+    "{rttm:diar-empty.rttm.txt}"
+   ],
+   "stdout": "0\n",
+   "stderr": "",
+   "rc": 0
+  },
+  {
+   "kind": "merge",
+   "cli": [
+    "asr-m1.json",
+    "{rttm:diar-1.rttm.txt}",
+    "{out}",
+    "--names",
+    "{names:speakers-bad.json}"
+   ],
+   "expect": "out-merge-1-badnames.txt",
+   "stdout": "",
+   "stderr": "merge_speakers: names sidecar unreadable, labels stay numbered: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\n",
+   "rc": 0,
+   "stderr_prefix": true
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-g1a.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-g1a.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-g1b.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-g1b.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-g2a.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-g2a.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-g2b.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-g2b.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-g3a.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-g3a.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-g3b.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-g3b.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-g4a.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-g4a.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-g4b.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-g4b.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-g5a.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-g5a.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-g5b.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-g5b.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-m1.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-m1.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-m2.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-m2.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-m3.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-m3.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-t1.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-t1.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-t2.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-t2.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-v1u.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-v1u.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-v1v.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-v1v.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-v2u.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-v2u.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "asr-v2v.json",
+    "{out}"
+   ],
+   "expect": "out-slim-asr-v2v.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-gapfill-1-tau.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-gapfill-1-tau.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-gapfill-1.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-gapfill-1.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-gapfill-2-tau.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-gapfill-2-tau.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-gapfill-2.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-gapfill-2.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-gapfill-3-tau.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-gapfill-3-tau.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-gapfill-3.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-gapfill-3.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-gapfill-4-tau.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-gapfill-4-tau.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-gapfill-4.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-gapfill-4.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-gapfill-5-tau.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-gapfill-5-tau.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-gapfill-5.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-gapfill-5.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-thai-1.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-thai-1.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-thai-2.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-thai-2.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-thai-3.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-thai-3.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-thai-4.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-thai-4.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-vote-1.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-vote-1.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "out-vote-2.json",
+    "{out}"
+   ],
+   "expect": "out-slim-out-vote-2.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "slim",
+   "cli": [
+    "whisper-1.json",
+    "{out}"
+   ],
+   "expect": "out-slim-whisper-1.json",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "kind": "thai_worker",
+   "golden": "thai-worker.json"
+  },
+  {
+   "kind": "speaker_id",
+   "golden": "speaker-id.json"
+  }
+ ]
+}

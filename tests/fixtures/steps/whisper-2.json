@@ -1,0 +1,138 @@
+{
+ "text": " helvix dulvo jostik frimblex crondi toraph eskar. vandrel jostik pelvan ixtel rostav helvixx jostik crondi. quessa lumvar megnézted. hastrel kelvo quessa abrel. quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo. Nirvo oskel. Nirvo oskel. Nirvo oskel. prandle vandrel lumvar moxel lumvar moxel lumvar moxel lumvar moxel lumvar moxel. kelvo tervin. kelvo jostik oskel abrelx zorvel toraph snarth.",
+ "language": "xx",
+ "segments": [
+  {
+   "id": 0,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 0.0,
+   "end": 2.44,
+   "text": " helvix dulvo jostik frimblex crondi toraph eskar."
+  },
+  {
+   "id": 1,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 2.67,
+   "end": 5.43,
+   "text": " vandrel jostik pelvan ixtel rostav helvixx jostik crondi."
+  },
+  {
+   "id": 2,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 5.73,
+   "end": 8.17,
+   "text": " quessa lumvar megnézted."
+  },
+  {
+   "id": 3,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 8.59,
+   "end": 10.07,
+   "text": " hastrel kelvo quessa abrel."
+  },
+  {
+   "id": 4,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 10.48,
+   "end": 26.48,
+   "text": " quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo."
+  },
+  {
+   "id": 5,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 27.38,
+   "end": 30.46,
+   "text": " Nirvo oskel."
+  },
+  {
+   "id": 6,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 31.35,
+   "end": 33.15,
+   "text": " Nirvo oskel."
+  },
+  {
+   "id": 7,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 33.67,
+   "end": 36.43,
+   "text": " Nirvo oskel."
+  },
+  {
+   "id": 8,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 36.71,
+   "end": 38.51,
+   "text": " prandle vandrel lumvar moxel lumvar moxel lumvar moxel lumvar moxel lumvar moxel."
+  },
+  {
+   "id": 9,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 41.2,
+   "end": 41.6,
+   "text": " kelvo tervin."
+  },
+  {
+   "id": 10,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 51.2,
+   "end": 53.64,
+   "text": " kelvo jostik oskel abrelx zorvel toraph snarth."
+  }
+ ]
+}

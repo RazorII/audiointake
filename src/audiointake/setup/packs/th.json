@@ -1,0 +1,102 @@
+{
+ "schema": 1,
+ "id": "th",
+ "version": 1,
+ "title": "Thai",
+ "language": "th",
+ "requires": [
+  "core"
+ ],
+ "routes": [
+  "thai_screen",
+  "thai_turns"
+ ],
+ "models": [
+  {
+   "key": "whisper",
+   "kind": "hf",
+   "tag": "whisper-large-v3-mlx",
+   "licence": "MIT",
+   "credit": "Whisper large-v3 by OpenAI, in the MLX layout by the MLX Community",
+   "repo": "mlx-community/whisper-large-v3-mlx",
+   "revision": "49e6aa286ad60c14352c404340ded53710378a11",
+   "files": [
+    {
+     "path": "config.json",
+     "size": 269,
+     "sha256": "34982ce6ae286095000f82ae9583b3431639e8b092bf60c961f203745e6500e3",
+     "blob": "2c626df3c540bdc0287b11725441d10e1af73680"
+    },
+    {
+     "path": "weights.npz",
+     "size": 3083520416,
+     "sha256": "05ff791ce3630fae47e7c51004e9666204d786246ec07cac6110af768099b40d",
+     "blob": "05ff791ce3630fae47e7c51004e9666204d786246ec07cac6110af768099b40d"
+    }
+   ],
+   "smoke": {
+    "kind": "whisper",
+    "seconds": 3
+   }
+  },
+  {
+   "key": "typhoon_source",
+   "kind": "hf",
+   "tag": "typhoon-whisper-large-v3-source",
+   "licence": "MIT",
+   "credit": "Typhoon Whisper Large v3 by the Typhoon Team, SCB 10X, fine-tuned from OpenAI's Whisper large-v3; the Thai model comes with OpenTyphoon's terms (opentyphoon.ai/tac)",
+   "repo": "typhoon-ai/typhoon-whisper-large-v3",
+   "revision": "748e8a418697d5920e62bced10590072dce90da5",
+   "files": [
+    {
+     "path": "config.json",
+     "size": 1233,
+     "sha256": "f981dd6576ca8173526d62b24adb0f6876d373ff7f303074bc91183bcdefd765",
+     "blob": "7e518fd2e0dc1cc83a75aacc01f5aa051a2d3215"
+    },
+    {
+     "path": "model-00001-of-00002.safetensors",
+     "size": 4993448880,
+     "sha256": "a3367c3cf8e03b4ffe44bf87344aa3a6de76b0f49e68bd716f58c6e466173443",
+     "blob": "a3367c3cf8e03b4ffe44bf87344aa3a6de76b0f49e68bd716f58c6e466173443"
+    },
+    {
+     "path": "model-00002-of-00002.safetensors",
+     "size": 1180663192,
+     "sha256": "0298e1257b3766b3a9a11bcaa13c778b755410f874ebadcf660aaf4f28b2ebed",
+     "blob": "0298e1257b3766b3a9a11bcaa13c778b755410f874ebadcf660aaf4f28b2ebed"
+    }
+   ]
+  },
+  {
+   "key": "typhoon",
+   "kind": "converted",
+   "tag": "typhoon-whisper-large-v3",
+   "licence": "MIT",
+   "credit": "Typhoon Whisper Large v3 by the Typhoon Team, SCB 10X, fine-tuned from OpenAI's Whisper large-v3; the Thai model comes with OpenTyphoon's terms (opentyphoon.ai/tac)",
+   "convert": {
+    "from": "typhoon_source",
+    "tool": "whisper_hf2mlx",
+    "output": [
+     {
+      "path": "weights.safetensors",
+      "size": 3083280590,
+      "sha256": "8fce7f028e1b27c9fef5a0798a843a0ce7e0fd30c0a35c2492bbea2d09eb01b3"
+     },
+     {
+      "path": "config.json",
+      "size": 269,
+      "sha256": "34982ce6ae286095000f82ae9583b3431639e8b092bf60c961f203745e6500e3"
+     }
+    ]
+   },
+   "layout": {
+    "dir_name": "typhoon-whisper-large-v3-748e8a4"
+   },
+   "smoke": {
+    "kind": "typhoon",
+    "seconds": 3
+   }
+  }
+ ]
+}

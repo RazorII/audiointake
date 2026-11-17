@@ -1,0 +1,138 @@
+{
+ "text": " vandrel dulvo helvixx tervin. frimble helvix nirvo rostav helvixx dravik. mirtel jostik megnézted. hastrel helvix brimdal oskel velmine dulvo. quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo. Nirvo oskel. Nirvo oskel. Nirvo oskel. eskar prandle lumvar moxel lumvar moxel lumvar moxel lumvar moxel lumvar moxel. hastrel velmine. brimdal plimbo mirtel wexo zorvel brimdalx eskar.",
+ "language": "xx",
+ "segments": [
+  {
+   "id": 0,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 0.0,
+   "end": 1.48,
+   "text": " vandrel dulvo helvixx tervin."
+  },
+  {
+   "id": 1,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 2.18,
+   "end": 4.3,
+   "text": " frimble helvix nirvo rostav helvixx dravik."
+  },
+  {
+   "id": 2,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 4.55,
+   "end": 6.35,
+   "text": " mirtel jostik megnézted."
+  },
+  {
+   "id": 3,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 6.74,
+   "end": 8.86,
+   "text": " hastrel helvix brimdal oskel velmine dulvo."
+  },
+  {
+   "id": 4,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 9.46,
+   "end": 25.46,
+   "text": " quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo quorm sablo."
+  },
+  {
+   "id": 5,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 26.36,
+   "end": 28.16,
+   "text": " Nirvo oskel."
+  },
+  {
+   "id": 6,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 29.07,
+   "end": 31.19,
+   "text": " Nirvo oskel."
+  },
+  {
+   "id": 7,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 31.4,
+   "end": 34.48,
+   "text": " Nirvo oskel."
+  },
+  {
+   "id": 8,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 35.3,
+   "end": 37.74,
+   "text": " eskar prandle lumvar moxel lumvar moxel lumvar moxel lumvar moxel lumvar moxel."
+  },
+  {
+   "id": 9,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 41.2,
+   "end": 41.6,
+   "text": " hastrel velmine."
+  },
+  {
+   "id": 10,
+   "seek": 0,
+   "tokens": [],
+   "temperature": 0.0,
+   "avg_logprob": -0.2,
+   "compression_ratio": 1.3,
+   "no_speech_prob": 0.01,
+   "start": 51.2,
+   "end": 53.64,
+   "text": " brimdal plimbo mirtel wexo zorvel brimdalx eskar."
+  }
+ ]
+}

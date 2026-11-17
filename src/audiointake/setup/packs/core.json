@@ -1,0 +1,163 @@
+{
+ "schema": 1,
+ "id": "core",
+ "version": 1,
+ "title": "Core: transcription, speaker labels and names",
+ "requires": [],
+ "routes": [],
+ "models": [
+  {
+   "key": "ultra",
+   "kind": "hf",
+   "tag": "parakeet-ultra-mlx",
+   "licence": "CC-BY-4.0",
+   "credit": "Parakeet Ultra by moondream, built on NVIDIA's Parakeet TDT; MLX conversion by selcukkubur",
+   "repo": "selcukkubur/parakeet-ultra-mlx",
+   "revision": "b554592c50b2a48471add2daa3d46fa9f00fef5e",
+   "files": [
+    {
+     "path": "config.json",
+     "size": 244093,
+     "sha256": "f320f1292511f34ec47f513755fe20fd01dbfc09a925d42730e66059a6e1ef4c",
+     "blob": "4f469c2e92c981861f7ce6bcd940e608401d931e"
+    },
+    {
+     "path": "model.safetensors",
+     "size": 1254184462,
+     "sha256": "ee62d5a5f62f931b73ab000f07d864ee00b1e773205b1e666ff7990680c328b4",
+     "blob": "ee62d5a5f62f931b73ab000f07d864ee00b1e773205b1e666ff7990680c328b4"
+    }
+   ],
+   "smoke": {
+    "kind": "parakeet",
+    "seconds": 3
+   }
+  },
+  {
+   "key": "v3",
+   "kind": "hf",
+   "tag": "parakeet-tdt-0.6b-v3",
+   "licence": "CC-BY-4.0",
+   "credit": "Parakeet TDT 0.6B v3 by NVIDIA, in the MLX layout by the MLX Community",
+   "repo": "mlx-community/parakeet-tdt-0.6b-v3",
+   "revision": "ed2b7e8c15f9aaa0b5772e2efb986255eaef7e15",
+   "files": [
+    {
+     "path": "config.json",
+     "size": 244093,
+     "sha256": "f320f1292511f34ec47f513755fe20fd01dbfc09a925d42730e66059a6e1ef4c",
+     "blob": "4f469c2e92c981861f7ce6bcd940e608401d931e"
+    },
+    {
+     "path": "model.safetensors",
+     "size": 2508288736,
+     "sha256": "05e01c7f396c298cf7d23f61da7b504adeab698f0aaeafd9c82d198625464592",
+     "blob": "05e01c7f396c298cf7d23f61da7b504adeab698f0aaeafd9c82d198625464592"
+    }
+   ],
+   "smoke": {
+    "kind": "parakeet",
+    "seconds": 3
+   }
+  },
+  {
+   "key": "nemotron",
+   "kind": "hf",
+   "tag": "nemotron3-offline",
+   "licence": "OpenMDW-1.1",
+   "credit": "Nemotron 3 Diarization by NVIDIA, converted to CoreML by FluidInference",
+   "repo": "FluidInference/nemotron-3-diarization-coreml",
+   "revision": "25a90f97f254428d4b30374b76af9c74fdee8327",
+   "files": [
+    {
+     "path": "learnable_sil_emb.bin",
+     "size": 2048,
+     "sha256": "d4417b3c0eabdf7c47032fac2b5b5a7ee83d819a6ddda8fd8eaf74e2b5cc4ac7",
+     "blob": "d4417b3c0eabdf7c47032fac2b5b5a7ee83d819a6ddda8fd8eaf74e2b5cc4ac7"
+    },
+    {
+     "path": "monolithic/v2/Nemotron3Diarizer_offline.mlmodelc/analytics/coremldata.bin",
+     "size": 243,
+     "sha256": "491594df92282a4f2cef65e96d236e210a5c4627063e37e822ec858aaaad416d",
+     "blob": "491594df92282a4f2cef65e96d236e210a5c4627063e37e822ec858aaaad416d"
+    },
+    {
+     "path": "monolithic/v2/Nemotron3Diarizer_offline.mlmodelc/coremldata.bin",
+     "size": 758,
+     "sha256": "8b790c919c65744648c17290a26d3371e0e55db655310e7f8445080757b0bf08",
+     "blob": "8b790c919c65744648c17290a26d3371e0e55db655310e7f8445080757b0bf08"
+    },
+    {
+     "path": "monolithic/v2/Nemotron3Diarizer_offline.mlmodelc/model.mil",
+     "size": 505274,
+     "sha256": "ea5673d9e9ec785e7c8fb628acd82f9f86214c46b6584eaacdb6faddcb3f0277",
+     "blob": "2f649fd4fc3c1bc613ab4c80c63b24f33681d309"
+    },
+    {
+     "path": "monolithic/v2/Nemotron3Diarizer_offline.mlmodelc/weights/weight.bin",
+     "size": 198654080,
+     "sha256": "bab76e5f190d0e4a4e174e7fcb1e9beea58c6b2be56e665e2cac8fba6d10f7f1",
+     "blob": "bab76e5f190d0e4a4e174e7fcb1e9beea58c6b2be56e665e2cac8fba6d10f7f1"
+    }
+   ],
+   "layout": {
+    "dir_name": "nemotron3-offline-25a90f9",
+    "links": [
+     {
+      "from": "monolithic/v2/Nemotron3Diarizer_offline.mlmodelc",
+      "to": "Nemotron3Diarizer_offline.mlmodelc"
+     },
+     {
+      "from": "learnable_sil_emb.bin",
+      "to": "learnable_sil_emb.bin"
+     }
+    ]
+   },
+   "smoke": {
+    "kind": "nemotron",
+    "seconds": 3
+   }
+  },
+  {
+   "key": "campplus",
+   "kind": "github_release",
+   "tag": "campplus-zh_en-advanced",
+   "licence": "Apache-2.0",
+   "credit": "CAM++ speaker embedding by 3D-Speaker, exported to ONNX by sherpa-onnx (k2-fsa)",
+   "repo": "k2-fsa/sherpa-onnx",
+   "release_tag": "speaker-recongition-models",
+   "files": [
+    {
+     "path": "3dspeaker_speech_campplus_sv_zh_en_16k-common_advanced.onnx",
+     "size": 28281164,
+     "sha256": "aa3cfc16963a10586a9393f5035d6d6b57e98d358b347f80c2a30bf4f00ceba2",
+     "blob": "aa3cfc16963a10586a9393f5035d6d6b57e98d358b347f80c2a30bf4f00ceba2"
+    }
+   ],
+   "smoke": {
+    "kind": "campplus",
+    "seconds": 3
+   }
+  }
+ ],
+ "canary": {
+  "url": "https://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2004a/audio/ES2004a.Array1-01.wav",
+  "range": [
+   26400044,
+   27360044
+  ],
+  "sha256": "f561b23fce66ea62fb03448f40e05da47f4045aecc726681bc9573b637b69634",
+  "wav": {
+   "rate": 16000,
+   "channels": 1,
+   "bits": 16
+  },
+  "file": "es2004a-825-855.wav",
+  "must_find": [
+   "teletext",
+   "generation",
+   "intuitive"
+  ],
+  "min_speakers": 2
+ }
+}

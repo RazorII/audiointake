@@ -1,0 +1,84 @@
+{
+ "thai": true,
+ "model": "thai-model-x",
+ "turns_from": "nemotron",
+ "windows": 3,
+ "thai_windows": 2,
+ "turns": [
+  {
+   "start": 1.844,
+   "end": 2.305,
+   "spk": "speaker_0",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "snarth quibbet kelvo wexo dravik crondi"
+  },
+  {
+   "start": 4.691,
+   "end": 6.61,
+   "spk": "speaker_1",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "moxel zorvel"
+  },
+  {
+   "start": 10.61,
+   "end": 14.433,
+   "spk": "speaker_2",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "jostik fennow jarnoc"
+  },
+  {
+   "start": 16.831,
+   "end": 17.73,
+   "spk": "speaker_2",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "sablo wexo"
+  },
+  {
+   "start": 17.517,
+   "end": 18.985,
+   "spk": "speaker_1",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "eskar quibbet glimor nirvo abrel"
+  },
+  {
+   "start": 20.454,
+   "end": 21.493,
+   "spk": "speaker_2",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "brimdal lumvar vandrel yarsk"
+  },
+  {
+   "start": 26.463,
+   "end": 26.957,
+   "spk": "speaker_0",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "pelvan eskar quorm quorm jarnoc"
+  },
+  {
+   "start": 27.739,
+   "end": 28.219,
+   "spk": "speaker_1",
+   "p_thai": 0.9,
+   "p_en": 0.02,
+   "text": "gostra zorvel"
+  },
+  {
+   "start": 28.719,
+   "end": 30.219,
+   "spk": "speaker_1",
+   "p_thai": 0.8,
+   "p_en": 0.05,
+   "text": "zintar abrel"
+  }
+ ],
+ "stats": {
+  "turns": 9
+ }
+}
