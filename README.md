@@ -1,4 +1,4 @@
-# audiointake
+# <img src="https://raw.githubusercontent.com/RazorII/audiointake/main/claude-plugin/.claude-plugin/icon.png" alt="audiointake icon" width="40" height="40" align="top"> audiointake
 
 [![test](https://github.com/RazorII/audiointake/actions/workflows/test.yml/badge.svg)](https://github.com/RazorII/audiointake/actions/workflows/test.yml)
 
